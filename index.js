@@ -162,6 +162,9 @@ run().catch(console.dir);
 app.get("/", (req, res) => {
   res.send("starting my furniture mart");
 });
+app.get("/hello", (req, res) => {
+  res.send("hello, this is updated");
+});
 
 app.listen(port, () => {
   console.log("Running my furniture mart on port", port);
